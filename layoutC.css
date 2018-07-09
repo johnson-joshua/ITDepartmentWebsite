@@ -1,0 +1,167 @@
+
+a:link {
+	color: #0000FF;
+}
+a:visited {
+	color: #9900CC;
+}
+a:hover {
+		text-decoration: underline;
+}
+
+body {
+	background-color: rgba(100,100,100,.5);
+}
+#wrapper {
+	background-color: white;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 100px;
+}
+header {
+	background-image: url('./Images/CCTC_Logo.gif');
+	background-repeat: no-repeat;
+	background-color: #263A7C;/* This is the color in the header of the CCTC page */
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: row;
+	-webkit-flex-direction: row; 
+	width: 100%;
+	text-indent: -9999px; /*From page 260 in book */
+	height: 62px;
+	border-bottom: 3px solid gold;
+	white-space: nowrap;
+	overflow: hidden;
+	}
+
+#busbee, #carroll, #mcgainey, #mclaughlin, #pritchard, #wells {
+	font-family: tahoma, sans-serif;
+	font-size: 20px;
+	text-align: center;
+}
+
+table {
+	border: 1px dotted gold;
+}
+td {
+	border: 1px solid #263A7C;
+}
+#content {
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: row;
+	-webkit-flex-direction: row;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+}
+nav {
+	display: flex;
+	display: -webkit-flex;
+	margin-left: 0;
+	background-color: #eaeaea;
+	flex-direction: row;
+	-webkit-flex-direction: row;
+	flex-wrap: wrap;
+	flex: 1;
+	height: 2410px;
+	}
+nav li{
+	list-style-type: none;
+	margin-left: -25px;
+	margin-right: 15px;
+	text-align: center;
+	font-family: tahoma;
+	font-size: 20px;
+	line-height: 150%;
+}
+a {
+	text-decoration: none;
+}
+main {
+	display: flex;
+	display: -webkit-flex;
+	background-color: white;
+	width: 100%;
+	padding: 5px 10px;
+	flex-direction: row;
+	-webkit-flex-direction: row;
+	flex-wrap: wrap;
+	flex: 6;
+	overflow: auto;
+	font-family: tahoma;
+	font-size: 15px;
+	}
+footer {
+	background-color: #263A7C;
+	color: white;
+	width: 100%;
+	text-align: center;
+	height: 30px;
+	position: relative;
+	bottom: 22px;
+	/*display: flex;
+	display: -webkit-flex;
+	flex-direction: row;
+	-webkit-flex-direction: row;*/
+	}
+@media only screen and (max-width: 1024px)
+{
+	#wrapper {
+		width: 100%;
+	}
+	#content {
+		display: block;
+	}
+	#busbee, #carroll, #mcgainey, #mclaughlin, #pritchard, #wells {
+		padding: 5px 0;
+		margin: 0 0;
+	}
+	nav {
+		display: block;
+		margin-top: -15px;
+		height: auto;
+	}
+	nav a {
+		display: inline-table;
+		padding: 0;
+		width: auto;
+	}
+	nav li {
+		display: inline-table;
+		padding: 5px;
+		margin-left: 10px;
+		width: auto;
+	}
+	main {
+		display: block;
+		width: auto;
+		margin-top: -10px;
+	}
+	
+	
+	
+}/* END OF 1024 */
+
+@media only screen and (max-width: 768px)
+{
+	#wrapper {
+		width: auto;
+	}
+	#content {
+		display: block;
+	}
+	nav a {
+		text-align: center;
+		margin: 30px;
+	}
+	nav li {
+		margin: -30px;
+	}
+	/* CSS BELOW HERE IS FOR THE COMMENTS FORM (TABLE) */
+	table {
+		
+	}
+	
+
+}/* END OF 768 */

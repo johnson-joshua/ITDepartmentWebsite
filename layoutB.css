@@ -1,0 +1,225 @@
+#wrapper {
+	background-color: white;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 2150px;
+}
+a:link {
+	color: #0000FF;
+}
+a:visited {
+	color: #9900CC;
+}
+a:hover {
+		text-decoration: underline;
+}
+body {
+	background-color: rgba(100,100,100,.5);
+	/*display: flex;
+	display: -webkit-flex;
+	flex-direction: col;
+	-webkit-flex-direction: col;
+	flex: 9;
+	-webkit-flex: 9;*/
+	/*flex-wrap: nowrap;*/
+}
+h1, figure {
+	width: 80%;
+	text-align: center;
+	margin-left: 170px;
+}
+#figureArea {
+	padding-right: 10px;
+	height: 0px;
+}
+header {
+	background-image: url('./Images/CCTC_Logo.gif');
+	background-repeat: no-repeat;
+	background-color: #263A7C;/* This is the color in the header of the CCTC page */
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: row;
+	-webkit-flex-direction: row; 
+	width: 100%;
+	text-indent: -9999px; /*From page 260 in book */
+	height: 62px;
+	border-bottom: 3px solid gold;
+	white-space: nowrap;
+	overflow: hidden;
+	}
+#header2 {
+	font-family: times new roman;
+	font-size: 45pt;
+	margin-top: 0;
+}
+footer {
+	text-align: center;
+	background-color: #263A7C;
+	color: white;
+	height: 50px;
+	line-height: 300%;
+	margin-top: -132px;
+}
+nav {
+/*	display: -webkit-flex;
+	display: flex;
+	flex-direction: col;
+	-webkit-flex-direction: col;
+	flex: 1;
+	-webkit-flex: 1;*/
+	margin-left: 0;
+	padding-top: 10px;
+	position: relative;
+	bottom: 110px;
+	background-color: #eaeaea;
+	width: 150px;
+	height: 2050px;
+	}
+nav li{
+	list-style-type: none;
+	margin-left: -15px;
+	margin-right: 15px;
+	text-align: center;
+	font-family: tahoma;
+	font-size: 20px;
+	line-height: 150%;
+}
+a{
+	text-decoration: none;
+}
+#indexNavArea {
+	height: 100%;
+}
+
+
+
+
+
+/*				MEDIA QUERIES!!!!!				*/
+
+
+
+
+
+
+
+@media only screen and (max-width: 1024px)
+{
+		h1, figure {
+		margin-left: 0;
+		width: 100%;
+		text-align: center;
+	}
+	
+	#wrapper {
+		height: 2300px;
+		width: 100%;
+	}
+	#header2 {
+		font-size: 25px;
+		position: relative;
+		top: 100px;
+		right: 90px;
+		width: 100%;
+		margin-left: 90px;
+		/*visibility: hidden;*/
+	}
+	#figureArea {
+		margin-top: 100px;
+		margin-right: 200px;
+		width: 100%;
+	}
+	nav {
+		display: inline table;
+		margin-top: -20px;
+		height: auto;
+		width: auto;
+		text-align: center;
+		/*width: 706px;
+		min-width: 400px;*/
+	}
+	nav a {
+		/*display: inline-table;*/
+		/*padding: 5px;*/
+		width: auto
+	}
+	nav li {
+		display: inline-table;
+		padding: 0 -5px;
+		margin-left: 10px;
+		width: auto;
+	}
+	footer {
+		position: relative;
+		top: 2150px;
+	}
+	
+}
+
+
+
+
+
+/*			MEDIA QUERIES FOR 768 PIXELS			*/
+
+
+
+
+
+@media only and screen(max-width: 768px)
+{
+	/*nav li {
+		width: auto;
+	}
+	nav a {
+		width: auto;
+	}*/
+	
+	nav a {
+		padding: 0 10px;
+		text-align: center;
+		margin: 30px;
+		width: auto;
+	}
+	nav li {
+		margin: -30px;
+		width: auto;
+	}
+	
+	body {
+		margin-left: 0;
+		margin-right: 0;
+
+	}
+	#figureArea {
+	margin-left: 0;
+		width: auto;
+	}
+
+	#indexContentArea {
+		margin-left: 0;
+		padding-left: 0;
+		min-width: 800px;
+	}
+	h1, figure {
+		margin-left: 0;
+		width: 100%;
+		text-align: center;
+		min-width: 800px;
+	}
+	body {
+		min-width: 800px;
+	}
+	#header2 {
+		width: 100%;
+		margin-left: 100px;
+	}
+	#wrapper {
+		width: 100%;
+		min-width:800px;
+	}
+		
+
+
+}

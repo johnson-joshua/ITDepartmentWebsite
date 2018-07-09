@@ -1,0 +1,186 @@
+
+a:link {
+	color: #0000FF;
+}
+a:visited {
+	color: #9900CC;
+}
+a:hover {
+		text-decoration: underline;
+}
+
+body {
+	background-color: rgba(100,100,100,.5);
+	height: 100%;
+}
+#wrapper {
+	background-color: white;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 100%;
+}
+header {
+	background-image: url('./Images/CCTC_Logo.gif');
+	background-repeat: no-repeat;
+	background-color: #263A7C;/* This is the color in the header of the CCTC page */
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: row;
+	-webkit-flex-direction: row; 
+	width: 100%;
+	text-indent: -9999px; /*From page 260 in book */
+	height: 62px;
+	border-bottom: 3px solid gold;
+	white-space: nowrap;
+	overflow: hidden;
+	}
+
+#content {
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: row;
+	-webkit-flex-direction: row;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+}
+#firstParagraph {
+	text-align: center;
+	font-size: 18px;
+	color: #263A7C;
+}
+#secondParagraph {
+	text-align: center;
+	font-size: 16px;
+	color: #263A7C;
+}
+#values {
+	text-align: center;
+	width: 100%;
+	color: #263A7C;
+}
+#values li {
+		list-style-image: url("./Images/cctccrest-small.png");
+}
+h3, h2 {
+	width: 100%;
+	text-align: center;
+	color: black;
+}
+dt {
+	font-weight: bold;
+}
+#certsUL, #footerUL {
+	width: 100%;
+}
+nav {
+	display: flex;
+	display: -webkit-flex;
+	margin-left: 0;
+	background-color: #eaeaea;
+	flex-direction: row;
+	-webkit-flex-direction: row;
+	flex-wrap: wrap;
+	flex: 1;
+	width: 150px;
+	height: 1702px;
+	}
+nav li{
+	list-style-type: none;
+	margin-left: -15px;
+	margin-right: 15px;
+	text-align: center;
+	font-family: tahoma;
+	font-size: 20px;
+	line-height: 150%;
+}
+a {
+	text-decoration: none;
+}
+main {
+	display: flex;
+	display: -webkit-flex;
+	background-color: white;
+	width: 100%;
+	padding: 5px 10px;
+	flex-direction: row;
+	-webkit-flex-direction: row;
+	flex-wrap: wrap;
+	flex: 6;
+	font-family: tahoma;
+	font-size: 15px;
+	}
+
+footer {
+	background-color: #263A7C;
+	color: white;
+	width: 100%;
+	text-align: center;
+	height: 50px;
+	margin-top: -22px;
+	line-height: 300%;
+	}
+@media only screen and (max-width: 1024px)
+{
+
+	#wrapper {
+		width: 100%;
+	}
+	#content {
+		display: block;
+	}
+	#values li {
+		
+	}
+	nav {
+		display: inline table;
+		height: 50px;
+		width: auto;
+	}
+	nav a {
+		display: inline-table;
+		
+		width: auto
+	}
+	nav li {
+		display: inline-table;
+		padding: 0 -5px;
+		margin-left: 10px;
+		width: auto;
+	}
+	main {
+		display: block;
+		width: auto;
+		margin-top: -10px;
+	}
+	
+	
+	
+}/* END OF 1024 */
+
+@media only screen and (max-width: 565px)
+{
+	#wrapper {
+		width: auto;
+	}
+	#content {
+		display: block;
+	}
+	nav {
+			height: 150px;
+	}
+	#facultyNavArea {'
+			height: 150px;
+	}
+	nav a {
+		padding: 0 10px;
+		text-align: center;
+		margin: 30px;
+	}
+	nav li {
+		margin: -30px;
+	}
+
+	
+
+}/* END OF 768 */

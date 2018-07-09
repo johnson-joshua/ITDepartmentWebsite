@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Team 3 - Joshua Johnson, Jason Burt, Tiffany Moses -- Final Project -->
+<title>CCTC Computer Technology Department</title>
+<meta charset="utf-8">
+	<style>
+		body {
+			background-color: rgba(100,100,100,.5);
+		}
+		#wrapper {
+			background-color: white;
+			margin-left: auto;
+			margin-right: auto;
+			width: 450px;
+		}
+		header {
+			background-image: url("CCTCLogo.gif");
+			background-repeat: no-repeat;
+			background-color: #263A7C;
+			width: 100%;
+			height: 60px;
+			text-indent: -9999px; <!--From page 260 in book-->
+			white-space: nowrap;
+			overflow: hidden;
+			 display: block;
+			display: -webkit-flex;
+			flex-direction: row;
+			-webkit-flex-direction: row;
+			border-bottom: 3px solid gold;
+		}
+		h1 {
+			text-align: center;
+		}
+		form { background-color:#eaeaea;
+			font-family: Arial, sans-serif;
+			padding: 10px; 
+		}
+		label { 
+			float: left;
+			width: 120px; 
+			font-size: 14px;
+			clear: left;
+			text-align: right; 
+			padding-right: 10px;
+			margin-top: 10px; 
+			
+		}
+		#txtFName, #txtLName, #txtEmail, #rngRating, textarea { 
+			margin-left: 150px;
+			margin-top: 10px; 
+			display: block;
+			padding-left: 5px;
+		}
+		table {
+			background-color: #eaeaea;
+			margin-left: 275px;
+			border-spacing: 10px;
+		}
+		textarea {
+			max-width: 270px;
+			width: 270px;
+			height: 50px;
+			max-height: 100px;
+			overflow: auto;
+		}
+		#fieldSet {
+			align: center;
+		}
+		#legend {
+			font-size: 8pt;
+			color: #263A7C;
+		}
+		#btnReset, #btnSubmit {
+			background-color: #263A7C;
+			color: white;
+			border: 1px solid #263A7C;
+		}
+		#Rating, #Comments {
+			margin-left: 15px;
+		}
+		
+		
+		
+		@media only screen and (max-width: 768px)
+		{
+			#wrapper {
+				width: auto;
+			}
+			
+			
+			label {
+				text-align: left;
+			}
+			#txtFName, #txtLName, #txtEmail, #txtComments {
+				position: relative;
+				right: 50px;
+				width: 140px;
+			}
+			#rngRating {
+				width: 100px;
+			}
+				table {
+				position: relative;
+				top: 10px;
+				right: 220px;
+			}
+			a {
+				position: relative;
+				top: 30px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<h3>Central Carolina Technical College</h3>
+		</header>
+			<!--<form method="post" action="mailto:cctc.computertechnologydept@gmail.com/>-->
+			<form method="post" action="http://webdevbasics.net/scripts/demo.php">
+			<h1>Send Us Your Comments</h1>
+			<fieldset id="fieldSet">
+				<legend id="legend">Contact Information</legend>
+				<label for="fName">*First Name: </label>
+				<input type="text" name="First Name" id="txtFName" tabindex="1" required="required"/>
+				<label for="lName">*Last Name: </label>
+				<input type="text" name="Last Name" id="txtLName" tabindex="2" required="required"/>
+				<label for="email">*Email Address: </label>
+				<input type="text" name="Email Address" id="txtEmail" tabindex="3" required="required" placeholder="emailaddress@domain.com" size="28"/>
+			</fieldset>
+			<label for="Rating" id="Rating">Rating (1 - 10): </label>
+			<input type="range" name="Rating" id="rngRating" min="1" max="10" step="1" value="7" tabindex="4" /> 
+			<label for="comments" id="Comments">*Comments: </label>
+			<textarea name="comments" id="txtComments" rows="2" cols="30"  tabindex="5" required="required"></textarea>
+			<table>
+				<tr>
+					<td><input id="btnReset" type="reset" value="Reset"/></td>
+					<td><input id="btnSubmit" type="submit" value="Submit"/></td>
+				</tr>
+			<table>
+		</form>
+		<a href="index.html">Return to Home Page</a>
+	</div>
+</body>
+</html>
